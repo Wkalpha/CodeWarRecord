@@ -1,4 +1,4 @@
-# CodeWarRecord  
+# CodeWar record  
 Question 1.  
 
 Trolls are attacking your comment section!  
