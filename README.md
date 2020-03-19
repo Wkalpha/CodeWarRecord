@@ -79,4 +79,40 @@ class Persist {
   }
 }
 ```  
-[Question 4.](https://www.codewars.com/kata/546e2562b03326a88e000020/train/java)
+[Question 4.](https://www.codewars.com/kata/546e2562b03326a88e000020/train/java)  
+My solution:  
+```java
+public class SquareDigit {
+
+  public int squareDigits(int n) {
+    String re = "";
+    String temp = Integer.toString(n);
+    int[] a = new int[temp.length()];
+    for(int i = 0;i<temp.length();i++){
+	a[i] = (int) Math.pow(temp.charAt(i) - '0', 2);
+	}
+    for(int r:a){
+	    	re += r;
+}
+  return Integer.parseInt(re);
+}
+}
+```  
+Another answer:  
+```java
+public class SquareDigit {
+
+  public int squareDigits(int n) {
+    String result = ""; 
+    
+    while (n != 0) {
+      int digit = n % 10 ;
+      result = digit*digit + result ;
+      n /= 10 ;
+    }
+    
+    return Integer.parseInt(result) ;
+  }
+
+}
+```
