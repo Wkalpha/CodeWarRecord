@@ -12,7 +12,22 @@ public class Troll {
 [Question 2.](https://www.codewars.com/kata/578aa45ee9fd15ff4600090d/train/java)  
 My solution:
 ```java
-
+public class Kata {
+  public static int[] sortArray(int[] array) {
+		int x,y = 0;
+		for(int i = 0; i<array.length; i++){
+			for(int j=i+1; j<array.length; j++){
+				if(array[i]>array[j] && (array[i]%2!=0 && array[j]%2!=0)){
+					x = array[i];
+					y = array[j];
+					array[j] = x;
+					array[i] = y;
+				}
+			}
+		}
+	    return array;
+	  }
+}
 ```  
 
 [Question 3.](https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec/train/java)  
