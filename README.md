@@ -4,7 +4,6 @@ My solution:
 ```java
 public class Troll {
     public static String disemvowel(String str) {
-        // Code away...
         String ans = str.replaceAll("[aeiouAEIOU]","");
         return ans;
     }
@@ -12,6 +11,12 @@ public class Troll {
 ```
 [Question 2.](https://www.codewars.com/kata/578aa45ee9fd15ff4600090d/train/java)  
 My solution:
+```java
+
+```  
+
+[Question 3.](https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec/train/java)  
+My solution:  
 ```java
 class Persist {
   static int count = 0;
@@ -38,6 +43,23 @@ class Persist {
     }finally{
       count = 0;
     }
+    
+  }
+}
+```  
+Another answer:  
+```java
+class Persist {
+  public static int persistence(long n) {
+    long m = 1, r = n;
+
+    if (r / 10 == 0)
+      return 0;
+
+    for (r = n; r != 0; r /= 10)
+      m *= r % 10;
+
+    return persistence(m) + 1;
     
   }
 }
