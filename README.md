@@ -115,4 +115,36 @@ public class SquareDigit {
   }
 
 }
+```  
+[Question 5.](https://www.codewars.com/kata/5262119038c0985a5b00029f/train/java)  
+My solution:
+```java
+public class Prime {
+  public static boolean isPrime(int num) {
+	int count = 0;
+ 	if(num <= 0 || num == 1 || num == 4){
+ 		return false;
+ 	}else if(num == 2){
+ 		return true;
+ 	}else{
+ 		for(int i = 2; i <= num; i++){
+			if(num%i==0 && num != i ){
+			count++;
+				if(count>=1){
+					return false;
+				}
+			}
+		}
+	}
+	return(count<=1 ?  true:false);
+	}
+}
+```  
+Another solution:  
+```java
+public class Prime {
+  public static boolean isPrime(int num) {
+    return num > 1 && java.math.BigInteger.valueOf(num).isProbablePrime(20);
+  }
+}
 ```
