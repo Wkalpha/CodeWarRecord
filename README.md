@@ -1,5 +1,6 @@
 # CodeWar record  
 [Question 1.](https://www.codewars.com/kata/52fba66badcd10859f00097e/train/java)  
+將輸入的英文字串母音取代為空白  
 My solution:
 ```java
 public class Troll {
@@ -10,6 +11,7 @@ public class Troll {
 }
 ```
 [Question 2.](https://www.codewars.com/kata/578aa45ee9fd15ff4600090d/train/java)  
+將輸入的數值陣列的奇數做小到大排序  
 My solution:
 ```java
 public class Kata {
@@ -31,6 +33,7 @@ public class Kata {
 ```  
 
 [Question 3.](https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec/train/java)  
+將輸入的數值拆開相乘做為新的輸入值，直到輸入的數字位數為1  
 My solution:  
 ```java
 class Persist {
@@ -80,6 +83,7 @@ class Persist {
 }
 ```  
 [Question 4.](https://www.codewars.com/kata/546e2562b03326a88e000020/train/java)  
+輸入的數值單獨平方後串聯為字串，輸出要為數值型別
 My solution:  
 ```java
 public class SquareDigit {
@@ -117,7 +121,8 @@ public class SquareDigit {
 }
 ```  
 [Question 5.](https://www.codewars.com/kata/5262119038c0985a5b00029f/train/java)  
-My solution:
+判斷輸入的數值是否為質數  
+My solution(會超時):
 ```java
 public class Prime {
   public static boolean isPrime(int num) {
