@@ -152,4 +152,20 @@ public class Prime {
     return num > 1 && java.math.BigInteger.valueOf(num).isProbablePrime(20);
   }
 }
-```
+```  
+[Question 6.](https://www.codewars.com/kata/54b42f9314d9229fd6000d9c/train/java)  
+將輸入的字串中，重複的字元替換為)，不重複的字元替換為(，不分大小寫  
+```java
+public class DuplicateEncoder {
+    static String encode(String word){
+    word = word.toLowerCase();
+    String result = "";
+    for(int i =0; i < word.length(); i++){
+        char c = word.charAt(i);
+	result += word.indexOf(c) == word.lastIndexOf(c) ? "(":")";
+    }
+    return result;
+  }
+}
+```  
+
